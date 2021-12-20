@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- start: HEAD -->
+
+<head>
+    <title>농업정책보험금융원 정책자금관리시스템</title>
+    <!-- start: META -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: MAIN CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/iCheck/skins/all.css">
+    <link rel="stylesheet" href="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css">
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR SUBVIEW CONTENTS -->
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="assets/plugins/summernote/dist/summernote.css">
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="assets/plugins/DataTables/media/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/form-flat-pickr.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/flatpickr/monthPlugin.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/form-pickadate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/pickadate/pickadate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/flatpickr/flatpickr.min.css" />
+    <!-- end: CSS REQUIRED FOR THIS SUBVIEW CONTENTS-->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!--<link rel="stylesheet" href="assets/plugins/bootstrap-social-buttons/bootstrap-social.css">-->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- start: CORE CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/styles-responsive.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/themes/theme-style5.css" type="text/css" id="skin_color">
+    <link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print" />
+    <!-- end: CORE CSS -->
+    <link rel="shortcut icon" href="kr.ico" />
+    <script src="assets/js/feather.min.js"></script>
+</head>
+<!-- end: HEAD -->
+<!-- start: BODY -->
+
+<body>
+    <div class="main-wrapper">
+        <!-- start: TOPBAR -->
+        <header class="topbar navbar navbar-inverse navbar-fixed-top inner">
+            <!-- start: TOPBAR CONTAINER -->
+            <div class="container">
+                <div class="navbar-header"> <a class="sb-toggle-left hidden-md hidden-lg" href="#main-navbar"> <i class="fa fa-bars"></i> </a>
+                    <!-- start: LOGO -->
+                    <a class="navbar-brand" href="index.html">
+                        <div class="logo"></div>
+                    </a>
+                    <!-- end: LOGO -->
+                    <ul class="nav_icon hidden-sm hidden-xs">
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="게시판관리"><a href="#"><img src="assets/images/navicon_mng_brd.svg" /></a></li>
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="메뉴관리"><a href="#"><img src="assets/images/navicon_mng_menu.svg" /></a></li>
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="회원관리"><a href="#"><img src="assets/images/navicon_mng_mem.svg" /></a></li>
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="페이지관리"><a href="#"><img src="assets/images/navicon_mng_page.svg" /></a></li>
+                    </ul>
+                </div>
+                <div class="topbar-tools">
+                    <!-- start: TOP NAVIGATION MENU -->
+                    <ul class="nav navbar-right">
+                        <!-- start: USER DROPDOWN -->
+                        <li class="dropdown current-user"> 
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#"> 
+                                <img src="assets/images/icon_man.svg" style="width: 20px" class="img-circle" alt="">
+                                <span class="username hidden-xs">홍길동</span> <i class="fa fa-caret-down "></i> 
+                            </a>
+                            <ul class="dropdown-menu dropdown-dark">
+                                <li> <a href="pages_user_profile.html"> 정보수정 </a> </li>
+                                <li> <a href="pages_messages.html"> 쪽지함 (3) </a> </li>
+                                <li> <a href="pages_messages.html"> 로그아웃 </a> </li>
+                            </ul>
+                        </li>
+                        <!-- end: USER DROPDOWN -->
+
+                    </ul>
+                    <!-- end: TOP NAVIGATION MENU -->
+                </div>
+            </div>
+            <!-- end: TOPBAR CONTAINER -->
+        </header>
+        <!-- end: TOPBAR -->
+        <!-- start: PAGESLIDE LEFT -->
+        <a class="closedbar inner hidden-sm hidden-xs" href="#"> </a>
+        <nav id="pageslide-left" class="pageslide inner hidden-lg hidden-md">
+            <div class="navbar-content">
+                <!-- start: SIDEBAR -->
+                <div class="main-navigation left-wrapper transition-left">
+                    <!--<div class="navigation-toggler hidden-sm hidden-xs">
+							<a href="#main-navbar" class="sb-toggle-left">
+							</a>
+						</div>-->
+                    <div class="user-profile padding-horizontal-10 block">
+                        <div class="px-3  py-4 text-center">
+                            <h4 class=""><i class="fas fa-clock"></i>&nbsp; 최종 접속정보 </h4>
+                            <h3 class="no-margin"> 2021-11-12 <small>오전 12:00:12</small></h3>
+                            <h6>접속IP :210.120.12.13 </h6>
+                            <!--<a class="btn user-options sb_toggle">
+									<i class="fa fa-cog"></i>
+								</a>-->
+                        </div>
+                    </div>
+                    <!-- start: MAIN NAVIGATION MENU -->
+                    <ul class="main-navigation-menu">
+                        <!--<li class="start">
+								<a href="layouts_single_content_0.html"><i class="fa fa-home"></i> <span class="title"> 자료제 </span><span class="label label-default pull-right ">LABEL</span> </a>
+							</li>-->
+                        <li class="start active open"> <a href="javascript:void(0)"><i class="far fa-folder"></i> <span class="title"> 자료제출 </span><i class="fas fa-angle-down"></i> </a>
+                            <ul class="sub-menu">
+                                <li> <a href="#"> <span class="title"> 일반검사 </span> </a> </li>
+                                <li> <a href="layouts_single_content_2.html"> <span class="title"> 비대면검사 </span> </a></li>
+                                <li> <a href="layouts_single_content_3.html"> <span class="title"> 자율점검 </span> </a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="title"> 공지사항</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-edit"></i> <span class="title"> 설문조사</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-file-alt"></i> <span class="title"> 자료실</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-compass"></i> <span class="title"> FAQ</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="title"> 게시판관리</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-edit"></i> <span class="title"> 메뉴관리</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-file-alt"></i> <span class="title"> 회원관리</span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-compass"></i> <span class="title"> 페이지관리</span></a> </li>
+                    </ul>
+                    <!-- end: MAIN NAVIGATION MENU -->
+                </div>
+                <!-- end: SIDEBAR -->
+            </div>
+            <div class="slide-tools">
+                <div class="col-xs-6 text-left no-padding"> <a class="btn btn-md status" href="#"> Status <i class="fa fa-dot-circle-o text-green"></i> <span>Online</span> </a> </div>
+                <div class="col-xs-6 text-right no-padding"> <a class="btn btn-md log-out text-right" href="login_login.html"> <i class="fa fa-power-off"></i> Log Out </a> </div>
+            </div>
+        </nav>
+        <!-- end: PAGESLIDE LEFT -->
+        <section role="main" class="main_container content-body">
+            <div class="dash_container">
+                <!-- 첫번째줄  -->
+                <div class="maindash_item item_3span ">
+
+                    <ul class="nav nav-tabs style1_tab p-relative">
+                        <li class="nav-item active ">
+                            <a class="nav-link" data-toggle="tab" href="#panel_tab_example1">
+                                <span class="check-icon"></span>일반검사
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel_tab_example2">
+                                <span class="check-icon"></span>비대면검사
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel_tab_example3">
+                                <span class="check-icon"></span>자율점검
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div id="panel_tab_example1" class="tab-pane fade in active">
+                            <a href="submit_matrls.html"><span class="pull-right maintitle_right t--30"><i
+                                        data-feather="plus" class="mr-2" style="width:27px"></i></span></a>
+                            <div class="list_type_thumb">
+                                <ul class="list_thumb p-0">
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="panel_tab_example2" class="tab-pane fade">
+                            <a href=""><span class="pull-right maintitle_right t--30"><i data-feather="plus"
+                                        class="mr-2" style="width:27px"></i></span></a>
+                            <div class="list_type_thumb">
+                                <ul class="list_thumb p-0">
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="panel_tab_example3" class="tab-pane fade">
+                            <a href=""><span class="pull-right maintitle_right t--30"><i data-feather="plus"
+                                        class="mr-2" style="width:27px"></i></span></a>
+                            <div class="list_type_thumb">
+                                <ul class="list_thumb p-0">
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="" title="AllShare Play">
+                                        <div class="item_fnc"></div>
+                                        <a class="item" onClick="javascript:alert('test')">
+                                            <div class="item_thumb _droppable"
+                                                data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                data-resource-type="folder" data-resource-path="/AllShare Play/"
+                                                data-folder-type="my">
+                                                <div class="uploader_target">
+                                                    <div class="thumb _draggable"
+                                                        data-resource-key="azAwMmJpbGx8MjAxODI0MDU1fER8MA"
+                                                        data-resource-path="/AllShare Play/" data-resource-type="folder"
+                                                        data-folder-type="my"><span class="folder etc"></span></div>
+                                                </div>
+                                                <div class="info"> <span class="title">서울사물인터넷_Spring.zip</span> <span
+                                                        class="volume">2.4GB</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maindash_item item_1span ">
+                    <div class="mem_info">
+                        <span class="fl"><img src="assets/images/icon_mem.svg" width="54px"></span>
+                        <dl class="mem_info_dl">
+                            <dt>ADMIN <span class=""><a href="" class="text-1 text-azure"><small><i
+                                                class="fas fa-cog"></i></small></a></span></dt>
+                            <dd>로고스시스템</dd>
+                        </dl>
+                    </div>
+                    <dl class="mem_count">
+                        <dt>일반검사등록</dt>
+                        <dd><span>120</span> 건</dd>
+                    </dl>
+                    <dl class="mem_count">
+                        <dt>비대면검사등록</dt>
+                        <dd><span>24</span> 건</dd>
+                    </dl>
+                    <dl class="mem_count">
+                        <dt>자율점검</dt>
+                        <dd><span>8</span> 건</dd>
+                    </dl>
+                </div>
+                <!-- 첫번째줄  -->
+
+                <div class="maindash_item item_4span">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="maindash_title">공지사항<a href="notice_list.html"><span
+                                        class="pull-right maintitle_right"><i data-feather="plus" class="mr-2"
+                                            style="width:25px"></i></span></a></h1>
+                            <div class="notice_sec">
+                                <dl>
+                                    <dt>대출성 상품 판매대리・중개업자 등록 자격인증 평가 <small
+                                            class="pull-right text-small text-dark pt-3">21.07.20</small> </dt>
+                                    <dd>미국이 자산 매입 프로그램을 축소하기 시작할 수 있다는 신호를 내보내고 금리 인상 가능성이 대두되면서, 전세계는 확장적 정책 및 완화적
+                                        금융여건의 시대에서 까다로운 새로운 환경으로 이동하고 있습니다. 그러나 미국만이 글로벌 이벤트를 좌우하는 것이 아니라, 중국도 우리의 미래를
+                                        형성하는 데 점차 중요한 역할을 하고 있습니다.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>대출성 상품 판매대리・중개업자 등록 자격인증 평가 <small
+                                            class="pull-right text-small text-dark pt-3">21.07.20</small> </dt>
+                                    <dd>미국이 자산 매입 프로그램을 축소하기 시작할 수 있다는 신호를 내보내고 금리 인상 가능성이 대두되면서, 전세계는 확장적 정책 및 완화적
+                                        금융여건의 시대에서 까다로운 새로운 환경으로 이동하고 있습니다. 그러나 미국만이 글로벌 이벤트를 좌우하는 것이 아니라, 중국도 우리의 미래를
+                                        형성하는 데 점차 중요한 역할을 하고 있습니다.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>대출성 상품 판매대리・중개업자 등록 자격인증 평가 <small
+                                            class="pull-right text-small text-dark pt-3">21.07.20</small> </dt>
+                                    <dd>미국이 자산 매입 프로그램을 축소하기 시작할 수 있다는 신호를 내보내고 금리 인상 가능성이 대두되면서, 전세계는 확장적 정책 및 완화적
+                                        금융여건의 시대에서 까다로운 새로운 환경으로 이동하고 있습니다. 그러나 미국만이 글로벌 이벤트를 좌우하는 것이 아니라, 중국도 우리의 미래를
+                                        형성하는 데 점차 중요한 역할을 하고 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <h1 class="maindash_title">자료실<a href=""><span class="pull-right maintitle_right"><i data-feather="plus" class="mr-2" style="width:25px"></i></span></a></h1>
+                            <div class="refrnce_sec">
+                                <div class="panel-group accordion" id="accordion">
+                                    <div class="panel panel-white">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseOne">
+                                                    피델리티 글로벌 금융주 증권 펀드<span class="pull-right accodian_right"><i data-feather="arrow-up-right" class="mr-2" style="width:25px"></i></span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <ul class="refrnce_list">
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>투자설명서</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>신탁계약</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>월간운용보고서</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>분기운용보고서</span> </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseTwo">
+                                                    피델리티 글로벌 인구테마 증권 펀드<span class="pull-right accodian_right"><i
+                                                            data-feather="arrow-up-right" class="mr-2"
+                                                            style="width:25px"></i></span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul class="refrnce_list">
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>투자설명서</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>신탁계약</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>월간운용보고서</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>분기운용보고서</span> </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseThree">
+                                                    피델리티 글로벌 인컴 증권 펀드 H<span class="pull-right accodian_right"><i
+                                                            data-feather="arrow-up-right" class="mr-2"
+                                                            style="width:25px"></i></span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul class="refrnce_list">
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>투자설명서</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>신탁계약</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>월간운용보고서</span> </a></li>
+                                                    <li> <a href="#"> <img src="assets/images/icon_downdocmnt.svg"
+                                                                width="40px"> <span>분기운용보고서</span> </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="maindash_title">FAQ<a href=""><span class="pull-right maintitle_right"><i
+                                            data-feather="plus" class="mr-2" style="width:25px"></i></span></a></h1>
+                            <div class="faq_sec">
+                                <ul>
+                                    <li><a href=""><span class="circle_q">Q</span>신용카드 발급시 반드시 신용정보제공・활용에 동의해야 하는지?</a></li>
+                                    <li><a href=""><span class="circle_q">Q</span>개인정보 활용 동의를 철회하였으나, 여전히 개인정보가 활용가능한지?</a></li>
+                                    <li><a href=""><span class="circle_q">Q</span>개인정보 활용에 동의하지 않았음에도 개인정보가 활용된 경우는?</a></li>
+                                    <li><a href=""><span class="circle_q">Q</span>과거 신용카드 연체기록의 삭제시기는?</a></li>
+                                    <li><a href=""><span class="circle_q">Q</span>한 카드사에서 채무연체시 타사 신용카드도 이용정지 되나요?</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="assets/plugins/jQuery/jquery.js"></script>
+
+                <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+                <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                <script src="assets/plugins/blockUI/jquery.blockUI.js"></script>
+                <script src="assets/plugins/iCheck/jquery.icheck.min.js"></script>
+                <script src="assets/plugins/moment/min/moment.min.js"></script>
+                <script src="assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+                <script src="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+                <script src="assets/plugins/bootbox/bootbox.min.js"></script>
+                <script src="assets/plugins/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+                <script src="assets/plugins/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+                <script src="assets/plugins/jquery.appear/jquery.appear.js"></script>
+                <script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+                <script src="assets/plugins/velocity/jquery.velocity.min.js"></script>
+                <script src="assets/plugins/TouchSwipe/jquery.touchSwipe.min.js"></script>
+                <!-- end: MAIN JAVASCRIPTS -->
+                <!-- start: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+                <script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+                <script src="assets/plugins/jquery-mockjax/jquery.mockjax.js"></script>
+                <script src="assets/plugins/toastr/toastr.js"></script>
+                <script src="assets/plugins/bootstrap-modal/js/bootstrap-modal.js"></script>
+                <script src="assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+                <script src="assets/plugins/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+                <script src="assets/plugins/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+                <script src="assets/plugins/bootstrap-select/bootstrap-select.js"></script>
+                <script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+                <script src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+                <script src="assets/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
+                <script src="assets/plugins/truncate/jquery.truncate.js"></script>
+                <script src="assets/plugins/summernote/dist/summernote.min.js"></script>
+                <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+                <!-- date/time/clock-pikcer  -->
+                <script src="assets/plugins/pickers/flatpickr/flatpickr.js"></script>
+                <script src="assets/plugins/pickers/flatpickr/monthPlugin.js"></script>
+                <script src="assets/plugins/pickers/flatpickr/ko.js"></script>
+
+                <script>
+                    //모달 드래그 가능
+                    $('.modal-dialog').draggable({
+                        "handle": ".card-header"
+                        , containment: [-920, 0, 920, 3000]
+                        // 	[ x1, y1, x2, y2 ].
+                        //         , containment: ".modal-open"//"document"//$('#MOVESTEP_POP')//  '.content-body'
+                        //         , scroll:true
+                        //         , opacity: 0.7 //드레그시 투명값
+                    });
+
+                    //레이어 팝업에 스크롤 잡는 기능 
+                    $(document).ready(function () {
+                        $(document).on({
+                            'show.bs.modal': function () {
+                                var zIndex = 10400 + (10 * $('.modal:visible').length);
+                                $(this).css('z-index', zIndex);
+                                setTimeout(function () {
+                                    $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+                                }, 0);
+                            }
+                            , 'hidden.bs.modal': function () {
+                                if ($('.modal:visible').length > 0) {
+                                    // restore the modal-open class to the body element, so that scrolling works
+                                    // properly after de-stacking a modal.
+                                    setTimeout(function () {
+                                        $(document.body).addClass('modal-open');
+                                    }, 0);
+                                }
+                            }
+                        }, '.modal');
+
+                        let formatNumber = $('[data-gbn="number"]');
+                        $.each(formatNumber, function (idx, item) {
+                            $("[data-id='" + $(item).attr('data-id') + "']").keyup(function (event) {
+                                event.target.value = StringUtil.addComma(event.target.value);
+                            });
+                        })
+
+                        let formatDecimal = $('[data-gbn="decimal"]');
+                        $.each(formatDecimal, function (idx, item) {
+                            // 				이방법이 최선인지는 모르겠음
+                            $("[data-id='" + $(item).attr('data-id') + "']").keyup(function (event) {
+                                let temp = StringUtil.addCommaDecimal(event.target.value);
+                                event.target.value = temp;
+                            });
+                            // 아래 방법들은 다 작동을 안함.ㅋ
+                            // 				eval(item).on('onkeyup',function(event){
+                            // 					console.log(StringUtil.addComma(event.target.value));
+                            // 					event.target.value = StringUtil.addComma(event.target.value);
+                            // 				});
+                            // 				$(item).on('onkeyup',function(event){
+                            // 					console.log(StringUtil.addComma(event.target.value));
+                            // 					event.target.value = StringUtil.addComma(event.target.value);
+                            // 				});
+                            // 				$(item).addEventListener('onkeyup',function(event){
+                            // 					console.log(StringUtil.addComma(event.target.value));
+                            // 					event.target.value = StringUtil.addComma(event.target.value);
+                            // 				});
+                        })
+
+                        //연락처입력 format
+                        $(".phonFormatEvt").on("blur", function () {
+                            let number = $(this).val();
+                            $(this).val(StringUtil.phoneFomatter(number));
+                        });
+
+                        // 			'use strict';
+                        // 			Spinner();
+                        // 			Spinner.show();
+                    });//ready
+                    const yearOpt = {
+                        plugins: [
+                            new monthSelectPlugin({
+                                shorthand: true, //defaults to false
+                                dateFormat: "Y",
+                                altFormat: "Y",
+                                theme: "light", // defaults to "light"		              
+                            })
+                        ]
+                        , "allowInput": true
+                        , locale: "ko"
+                    };
+                    const monthOpt = {
+                        plugins: [
+                            new monthSelectPlugin({
+                                shorthand: true, //defaults to false
+                                dateFormat: "Y-m", //defaults to "F Y"
+                                altFormat: "Y F ", //defaults to "F Y"
+                                theme: "light", // defaults to "light"		              
+                            })
+                        ]
+                        , "allowInput": true
+                        , locale: "ko"
+                    };
+                    //기본 달력...많이 보는 달력 셋팅 
+                    const basicOpt = {
+                        "dateFormat": "Y-m-d",
+                        locale: "ko",
+                        "allowInput": true,
+                        "enableTime": false,
+                        "onValueUpdate": function (selectedDates, dateStr, instance) {
+                            if (instance.element.id.includes("MAIN_SEARCH")) {
+                                let isNopicker = $(instance.element).hasClass('nopickerTag');
+                                if (isNopicker) { $(instance.element).blur(); return false; }
+                                fnKIJUNDTBasic(dateStr, instance.element.id);
+                            }//if
+                            $(instance.element).blur();
+                            instance.close();
+                        }
+                    };
+
+                    const dateTimeOpt = {
+                        "dateFormat": "Y-m-d",
+                        "enableTime": true,
+                        "allowInput": true
+                    };
+
+                    (function (window, document, $) {
+                        'use strict';
+
+                        /*******  Flatpickr  *****/
+                        var basicPickr = $('.flatpickr-basic'),
+                            monthPickr = $('.flatpickr-month'),
+                            dateTimePickr = $('.flatpickr-date-time'),
+                            yearPickr = $('.flatpickr-year')
+
+                        if (basicPickr.length) {
+                            basicPickr.flatpickr(basicOpt);
+                        }
+                        if (monthPickr.length) {
+                            monthPickr.flatpickr(monthOpt);
+                        }
+                        if (yearPickr.length) {
+                            yearPickr.flatpickr(yearOpt);
+                        }
+                        // Date & TIme
+                        if (dateTimePickr.length) {
+                            dateTimePickr.flatpickr(dateTimeOpt);
+                        }
+
+                        basicPickr.on('blur', function (e) {
+                            let tid = $(e.target).attr('id');
+                            let isNopicker = $(e.target).hasClass('nopickerTag');
+
+                            let val = $(this).val().replaceAll(/[^0-9]/g, '');
+                            if (val.length == 8) {
+                                val = StringUtil.toDate(val, '-');
+                            } else {
+                                val = '';
+                            }
+                            $(this).val(val);
+
+                            if (isNopicker) { return false; }
+                            if (StringUtil.isNull(tid)) { return false; }
+                            if (tid.includes("MAIN_SEARCH")) {
+                                if (StringUtil.isNull(val)) { return false; }
+                                fnKIJUNDTBasic(val, tid);
+                            }//if
+                        });
+
+                        basicPickr.on('keydown', function (e) {
+                            if (e.keyCode == '13') {
+                                let val = $(this).val().replaceAll(/[^0-9]/g, '');
+                                if (val.length == 8) {
+                                    val = StringUtil.toDate(val, '-');
+                                } else {
+                                    val = '';
+                                }
+                                $(this).val(val);
+                            }
+                        });
+                    })(window, document, jQuery);
+
+                    function refreshFlatpicker(parentId) {
+                        if (parentId === undefined) parentId = '';
+                        $(parentId + ' .flatpickr-basic').flatpickr(basicOpt);
+                        $(parentId + ' .flatpickr-month').flatpickr(monthOpt);
+                        $(parentId + ' .flatpickr-year').flatpickr(yearOpt);
+                        $(parentId + ' .flatpickr-date-time').flatpickr(dateTimeOpt);
+                    }
+                    //feather 아이콘 불러오는 함수 지우지마세요 
+                    feather.replace();
+
+                </script>
+                <!--<script src="assets/js/subview.js"></script>
+		<script src="assets/js/subview-examples.js"></script>-->
+                <!-- end: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+                <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+                <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+                <!-- start: CORE JAVASCRIPTS  -->
+                <script src="assets/js/main.js"></script>
+                <!-- end: CORE JAVASCRIPTS  -->
+                <script>
+                    jQuery(document).ready(function () {
+                        Main.init();
+                    });
+                    //조직도 검색 창 호출
+                    function callREGITPOP() {
+                        $('#registPOP').modal('show');
+                    }
+                </script>
+</body>
+<!-- end: BODY -->
+
+</html>

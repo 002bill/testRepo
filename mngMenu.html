@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- start: HEAD -->
+
+<head>
+    <title>농업정책보험금융원 정책자금관리시스템</title>
+    <!-- start: META -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: MAIN CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/iCheck/skins/all.css">
+    <link rel="stylesheet" href="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css">
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR SUBVIEW CONTENTS -->
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="assets/plugins/summernote/dist/summernote.css">
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="assets/plugins/DataTables/media/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/form-flat-pickr.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/flatpickr/monthPlugin.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/form-pickadate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/pickadate/pickadate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/pickers/flatpickr/flatpickr.min.css" />
+    <!-- end: CSS REQUIRED FOR THIS SUBVIEW CONTENTS-->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!--<link rel="stylesheet" href="assets/plugins/bootstrap-social-buttons/bootstrap-social.css">-->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- start: CORE CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/styles-responsive.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/themes/theme-style5.css" type="text/css" id="skin_color">
+    <link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="assets/css/datatables.css" type="text/css" />
+    <!-- end: CORE CSS -->
+    <link rel="shortcut icon" href="kr.ico" />
+</head>
+<!-- end: HEAD -->
+<!-- start: BODY -->
+
+<body>
+    <!-- start: SLIDING BAR (SB) -->
+    <div id="slidingbar-area">
+        <div id="slidingbar">
+            <div class="row">
+                <!-- start: SLIDING BAR FIRST COLUMN -->
+                <div class="col-md-4 col-sm-4">
+                    <h2>My Options</h2>
+                    <div class="row">
+                        <div class="col-xs-6 col-lg-3">
+                            <button class="btn btn-icon btn-block space10"> <i class="fa fa-folder-open-o"></i> Projects
+                                <span class="badge badge-info partition-red"> 4 </span> </button>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <button class="btn btn-icon btn-block space10"> <i class="fa fa-envelope-o"></i> Messages
+                                <span class="badge badge-info partition-red"> 23 </span> </button>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <button class="btn btn-icon btn-block space10"> <i class="fa fa-calendar-o"></i> Calendar
+                                <span class="badge badge-info partition-blue"> 5 </span> </button>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <button class="btn btn-icon btn-block space10"> <i class="fa fa-bell-o"></i> Notifications
+                                <span class="badge badge-info partition-red"> 9 </span> </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: SLIDING BAR FIRST COLUMN -->
+                <!-- start: SLIDING BAR SECOND COLUMN -->
+                <div class="col-md-4 col-sm-4">
+                    <h2>My Recent Works</h2>
+                    <div class="blog-photo-stream margin-bottom-30">
+                        <ul class="list-unstyled">
+                            <li> <a href="#"><img alt="" src="assets/images/image01_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image02_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image03_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image04_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image05_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image06_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image07_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image08_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image09_th.jpg"></a> </li>
+                            <li> <a href="#"><img alt="" src="assets/images/image10_th.jpg"></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end: SLIDING BAR SECOND COLUMN -->
+                <!-- start: SLIDING BAR THIRD COLUMN -->
+                <div class="col-md-4 col-sm-4">
+                    <h2>My Info</h2>
+                    <address class="margin-bottom-40">
+                        Peter Clark <br>
+                        12345 Street Name, City Name, United States <br>
+                        P: (641)-734-4763 <br>
+                        Email: <a href="#"> peter.clark@example.com </a>
+                    </address>
+                    <a class="btn btn-transparent-white" href="#"> <i class="fa fa-pencil"></i> Edit </a>
+                </div>
+                <!-- end: SLIDING BAR THIRD COLUMN -->
+            </div>
+            <div class="row">
+                <!-- start: SLIDING BAR TOGGLE BUTTON -->
+                <div class="col-md-12 text-center"> <a href="#" class="sb_toggle"><i class="fa fa-chevron-up"></i></a>
+                </div>
+                <!-- end: SLIDING BAR TOGGLE BUTTON -->
+            </div>
+        </div>
+    </div>
+    <!-- end: SLIDING BAR -->
+    <div class="main-wrapper">
+        <!-- start: TOPBAR -->
+        <header class="topbar navbar navbar-inverse navbar-fixed-top inner">
+            <!-- start: TOPBAR CONTAINER -->
+            <div class="container">
+                <div class="navbar-header"> <a class="sb-toggle-left hidden-md hidden-lg" href="#main-navbar"> <i
+                            class="fa fa-bars"></i> </a>
+                    <!-- start: LOGO -->
+                    <a class="navbar-brand" href="index.html">
+                        <div class="logo"></div>
+                    </a>
+                    <!-- end: LOGO -->
+                    <ul class="nav_icon hidden-sm hidden-xs">
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="게시판관리"><a
+                                href="#"><img src="assets/images/navicon_mng_brd.svg" /></a></li>
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="메뉴관리"><a href="#"><img
+                                    src="assets/images/navicon_mng_menu.svg" /></a></li>
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="회원관리"><a href="#"><img
+                                    src="assets/images/navicon_mng_mem.svg" /></a></li>
+                        <li class="tooltips" data-toggle="tooltip" data-placement="bottom" title="페이지관리"><a
+                                href="#"><img src="assets/images/navicon_mng_page.svg" /></a></li>
+                    </ul>
+                </div>
+                <div class="topbar-tools">
+                    <!-- start: TOP NAVIGATION MENU -->
+                    <ul class="nav navbar-right">
+                        <!-- start: USER DROPDOWN -->
+                        <li class="dropdown current-user"> <a data-toggle="dropdown" data-hover="dropdown"
+                                class="dropdown-toggle" data-close-others="true" href="#"> <img
+                                    src="assets/images/icon_man.svg" style="width: 20px" class="img-circle" alt="">
+                                <span class="username hidden-xs">홍길동</span> <i class="fa fa-caret-down "></i> </a>
+                            <ul class="dropdown-menu dropdown-dark">
+                                <li> <a href="pages_user_profile.html"> 정보수정 </a> </li>
+                                <li> <a href="pages_messages.html"> 쪽지함 (3) </a> </li>
+                                <li> <a href="pages_messages.html"> 로그아웃 </a> </li>
+                            </ul>
+                        </li>
+                        <!-- end: USER DROPDOWN -->
+
+                    </ul>
+                    <!-- end: TOP NAVIGATION MENU -->
+                </div>
+            </div>
+            <!-- end: TOPBAR CONTAINER -->
+        </header>
+        <!-- end: TOPBAR -->
+        <!-- start: PAGESLIDE LEFT -->
+        <a class="closedbar inner hidden-sm hidden-xs" href="#"> </a>
+        <nav id="pageslide-left" class="pageslide inner">
+            <div class="navbar-content">
+                <!-- start: SIDEBAR -->
+                <div class="main-navigation left-wrapper transition-left">
+                    <!--<div class="navigation-toggler hidden-sm hidden-xs">
+							<a href="#main-navbar" class="sb-toggle-left">
+							</a>
+						</div>-->
+                    <div class="user-profile padding-horizontal-10 block">
+                        <div class="px-3  py-4 text-center">
+                            <h4 class=""><i class="fas fa-clock"></i>&nbsp; 최종 접속정보 </h4>
+                            <h3 class="no-margin"> 2021-11-12 <small>오전 12:00:12</small></h3>
+                            <h6>접속IP :210.120.12.13 </h6>
+                            <!--<a class="btn user-options sb_toggle">
+									<i class="fa fa-cog"></i>
+								</a>-->
+                        </div>
+                    </div>
+                    <!-- start: MAIN NAVIGATION MENU -->
+                    <ul class="main-navigation-menu">
+                        <!--<li class="start">
+								<a href="layouts_single_content_0.html"><i class="fa fa-home"></i> <span class="title"> 자료제 </span><span class="label label-default pull-right ">LABEL</span> </a>
+							</li>-->
+                        <li class="start active open"> <a href="javascript:void(0)"><i class="far fa-folder"></i> <span
+                                    class="title"> 자료제출 </span><i class="fas fa-angle-down"></i> </a>
+                            <ul class="sub-menu">
+                                <li> <a href="#"> <span class="title"> 일반검사 </span> </a> </li>
+                                <li> <a href="layouts_single_content_2.html"> <span class="title"> 비대면검사 </span> </a>
+                                </li>
+                                <li> <a href="layouts_single_content_3.html"> <span class="title"> 자율점검 </span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="title"> 공지사항
+                                </span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-edit"></i> <span class="title"> 설문조사
+                                </span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-file-alt"></i> <span class="title"> 자료실
+                                </span></a> </li>
+                        <li> <a href="javascript:void(0)"><i class="far fa-compass"></i> <span class="title"> FAQ
+                                </span></a> </li>
+                        <li class="hidden-lg hidden-md"> <a href="javascript:void(0)"><i class="far fa-comment-alt"></i>
+                                <span class="title"> 게시판관리 </span></a> </li>
+                        <li class="hidden-lg hidden-md"> <a href="javascript:void(0)"><i class="far fa-edit"></i> <span
+                                    class="title"> 메뉴관리 </span></a> </li>
+                        <li class="hidden-lg hidden-md"> <a href="javascript:void(0)"><i class="far fa-file-alt"></i>
+                                <span class="title"> 회원관리 </span></a> </li>
+                        <li class="hidden-lg hidden-md"> <a href="javascript:void(0)"><i class="far fa-compass"></i>
+                                <span class="title"> 페이지관리 </span></a> </li>
+                    </ul>
+                    <!-- end: MAIN NAVIGATION MENU -->
+                </div>
+                <!-- end: SIDEBAR -->
+            </div>
+            <div class="slide-tools">
+                <div class="col-xs-6 text-left no-padding"> <a class="btn btn-md status" href="#"> Status <i
+                            class="fa fa-dot-circle-o text-green"></i> <span>Online</span> </a> </div>
+                <div class="col-xs-6 text-right no-padding"> <a class="btn btn-md log-out text-right"
+                        href="login_login.html"> <i class="fa fa-power-off"></i> Log Out </a> </div>
+            </div>
+        </nav>
+        <!-- end: PAGESLIDE LEFT -->
+        <!-- start: PAGESLIDE RIGHT -->
+        <div id="pageslide-right" class="pageslide slide-fixed inner">
+            <div class="right-wrapper">
+                <ul class="nav nav-tabs nav-justified" id="sidebar-tab">
+                    <li class="active"> <a href="#settings" role="tab" data-toggle="tab">개인 설정</a> </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="settigs">
+                        <h5 class="sidebar-title text-5">수신설정</h5>
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="checkbox sidebar-content">
+                                    <label>
+                                        <input type="checkbox" value="" class="green" checked="checked">
+                                        쪽지허용 </label>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="checkbox sidebar-content">
+                                    <label>
+                                        <input type="checkbox" value="" class="green" checked="checked">
+                                        E-mail 수신허용 </label>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="checkbox sidebar-content">
+                                    <label>
+                                        <input type="checkbox" value="" class="green">
+                                        SMS 수신 허용 </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="sidebar-content ㅅㄷㅌㅅ">
+                            <button class="btn btn-success"> <i class="icon-settings"></i> Save Changes </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs px-4" id="style_selector">
+                    <div id="style_selector_wcontainer">
+                        <div class="pageslide-title text-5"> 스타일 설정 </div>
+                        <div class="box-title"> 상단메뉴 고정 </div>
+                        <div class="input-box">
+                            <div class="input">
+                                <select name="header" class="form-control">
+                                    <option value="fixed">고정</option>
+                                    <option value="default">기본</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-title"> 컬러 테마 </div>
+                        <div class="images icons-color"> <a href="#" id="style5"><img src="assets/images/color-5.png"
+                                    alt="" class="active"></a> <a href="#" id="default"><img
+                                    src="assets/images/color-1.png" alt=""></a> <a href="#" id="style4"><img
+                                    src="assets/images/color-4.png" alt=""></a> <a href="#" id="style9"><img
+                                    src="assets/images/color-9.png" alt=""></a> </div>
+                        <div class="style-options">
+                            <button class="btn btn-success"> 설정저장 </button>
+                            <button class="btn btn btn-default"> 취소 </button>
+                        </div>
+                    </div>
+                    <div class="style-toggle open"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end: PAGESLIDE RIGHT -->
+        <!-- start: MAIN CONTAINER -->
+        <div class="main-container inner">
+            <!-- start: PAGE -->
+            <div class="main-content">
+                <!-- start: PANEL CONFIGURATION MODAL FORM -->
+                <div class="modal fade" id="panel-config" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;
+                                </button>
+                                <h4 class="modal-title">Panel Configuration</h4>
+                            </div>
+                            <div class="modal-body"> Here will be a configuration form </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+                                <button type="button" class="btn btn-primary"> Save changes </button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                <!-- end: SPANEL CONFIGURATION MODAL FORM -->
+                <div class="container">
+                    <!-- start: PAGE HEADER -->
+                    <!-- start: TOOLBAR -->
+                    <div class="toolbar row">
+                        <div class="col-sm-6">
+                            <!--hidden-xs-->
+                            <div class="page-header">
+                                <div class="form-group mt-3">
+                                    <div class="btn-group"> <a href="#" data-toggle="dropdown"
+                                            class="btn btn-primary btn-px-4 dropdown-toggle rounded-40"> 공지사항 관리 <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li> <a href="javascript:callREGITPOP();"> 공지글 작성 </a> </li>
+                                            <li> <a href="#"> 선택항목 삭제 </a> </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 right_toolbar"> <a href="#" class="back-subviews"> <i class="fa fa-chevron-left"></i> BACK </a> <a href="#" class="close-subviews"> <i class="fa fa-times"></i> CLOSE </a>
+                            <div class="toolbar-tools pull-right">
+                                <!-- start: TOP NAVIGATION MENU -->
+                                <ul class="nav navbar-right">
+                                    <!-- start: TO-DO DROPDOWN -->
+                                    <li class="dropdown"> <a data-toggle="dropdown" data-hover="dropdown"
+                                            class="dropdown-toggle" data-close-others="true" href="#"> <i
+                                                class="fa fa-plus"></i><span class="hidden-sm hidden-xs"> SUBVIEW</span>
+                                            <!--나타났다 사라지틑 툴팁-->
+                                            <!--<div class="tooltip-notification hide">
+													<div class="tooltip-notification-arrow"></div>
+													<div class="tooltip-notification-inner">
+														<div>
+															<div class="semi-bold">
+																HI THERE!
+															</div>
+															<div class="message">
+																Try the Subview Live Experience
+															</div>
+														</div>
+													</div>
+												</div>-->
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-light dropdown-subview">
+                                            <li class="dropdown-header"> Notes </li>
+                                            <li> <a href="#newNote" class="new-note"><span class="fa-stack"> <i
+                                                            class="fa fa-file-text-o fa-stack-1x fa-lg"></i> <i
+                                                            class="fa fa-plus fa-stack-1x stack-right-bottom text-danger"></i>
+                                                    </span> Add new note</a> </li>
+                                            <li> <a href="#readNote" class="read-all-notes"><span class="fa-stack"> <i
+                                                            class="fa fa-file-text-o fa-stack-1x fa-lg"></i> <i
+                                                            class="fa fa-share fa-stack-1x stack-right-bottom text-danger"></i>
+                                                    </span> Read all notes</a> </li>
+                                            <li class="dropdown-header"> Calendar </li>
+                                            <li> <a href="#newEvent" class="new-event"><span class="fa-stack"> <i
+                                                            class="fa fa-calendar-o fa-stack-1x fa-lg"></i> <i
+                                                            class="fa fa-plus fa-stack-1x stack-right-bottom text-danger"></i>
+                                                    </span> Add new event</a> </li>
+                                            <li> <a href="#showCalendar" class="show-calendar"><span class="fa-stack">
+                                                        <i class="fa fa-calendar-o fa-stack-1x fa-lg"></i> <i
+                                                            class="fa fa-share fa-stack-1x stack-right-bottom text-danger"></i>
+                                                    </span> Show calendar</a> </li>
+                                            <li class="dropdown-header"> Contributors </li>
+                                            <li> <a href="#newContributor" class="new-contributor"><span
+                                                        class="fa-stack"> <i class="fa fa-user fa-stack-1x fa-lg"></i>
+                                                        <i
+                                                            class="fa fa-plus fa-stack-1x stack-right-bottom text-danger"></i>
+                                                    </span> Add new contributor</a> </li>
+                                            <li> <a href="#showContributors" class="show-contributors"><span
+                                                        class="fa-stack"> <i class="fa fa-user fa-stack-1x fa-lg"></i>
+                                                        <i
+                                                            class="fa fa-share fa-stack-1x stack-right-bottom text-danger"></i>
+                                                    </span> Show all contributor</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-search"> <a href="#"> <i class="fa fa-search"></i> <span
+                                                class="hidden-sm hidden-xs">SEARCH</span> </a>
+                                        <!-- start: SEARCH POPOVER -->
+                                        <div class="popover bottom search-box transition-all">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                <!-- start: SEARCH FORM -->
+                                                <form class="" id="searchform" action="#">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-main-color btn-squared"
+                                                                type="button"> <i class="fa fa-search"></i> </button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                                <!-- end: SEARCH FORM -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- end: SEARCH POPOVER -->
+                                    <li class="right-menu-toggle"> <a href="#" class="sb-toggle-right"> <i class="fa fa-globe toggle-icon"></i> <i class="fa fa-caret-right"></i>
+                                            <!--<span class="notifications-count badge badge-default hide"> 3</span>-->
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- end: TOP NAVIGATION MENU -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: TOOLBAR -->
+                    <!-- end: PAGE HEADER -->
+                </div>
+                <div class="content_body p-5">
+                    <h2><span class="mr-5">공지사항</h2>
+                        <div class="dataTables_wrapper mb-4">
+                            <table class="display no-footer dataTable">
+                                <col width="30px" />
+                                <col width="60px" />
+                                <col width="300px" />
+                                <col width="70px" />
+                                <col width="50px" />
+                                <col width="40px" />
+                                <thead>
+                                    <tr>
+                                        <th><label class="checkbox-inline tooltips" data-toggle="tooltip" data-placement="top"  title="전체선택"><input type="checkbox" class="square-teal" value="" /></label></th>
+                                        <th>번호</th>
+                                        <th>구분</th>
+                                        <th>등록자</th>
+                                        <th>등록일</th>
+                                        <th>조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center"><label class="checkbox-inline"><input type="checkbox" class="square-teal" value="" /></label></td>
+                                        <td class="text-center">19</td>
+                                        <td class="text-left">SBS Biz <생생경제 정보톡톡> 농식품모태펀드 소개 방영분('21.07.02.)	SBS Biz_생생경제정보톡톡_농금원 및 농식품모태펀드 방영분('21.7.2).mp4	</td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-12-12</td>
+                                        <td class="text-center">12324</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                    <!--<div class="subviews">
+                    <div class="subviews-container">							
+                    </div>
+                </div>-->
+                </div>
+                <!-- end: PAGE -->
+            </div>
+            <!-- end: MAIN CONTAINER -->
+            <!-- start: FOOTER -->
+            <footer class="inner">
+                <div class="footer-inner">
+                    <div class="pull-left"> Copyright &copy; 2021 농업정책보험금융원. All Rights Reserved. </div>
+                    <div class="pull-right"> <span class="go-top"><i class="fa fa-chevron-up"></i></span> </div>
+                </div>
+            </footer>
+            <!-- end: FOOTER -->
+
+        </div>
+        <!-- 결성기간 시작 -->
+        <div class="modal fade" id="registPOP" aria-hidden="true" style="display: none; z-index: 1060;"
+            data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <header class="card-header">
+                        <h2 class="card-title">자료등록
+                            <div class="card-actions">
+                                <a href="#" class="card-action card-action-dismiss  modal-dismiss"
+                                    data-dismiss="modal"></a>
+                            </div>
+                        </h2>
+                    </header>
+                    <div class="card-body">
+                        <div class="p-5">
+                            <div class="form-group row">
+                                <label class="col-sm-2 control-label text-sm-right mt-2">작성아이디</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" id="" placeholder="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 control-label text-sm-right mt-2">등록일시</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control flatpickr flatpickr-basic" type="text" id=""
+                                        placeholder="YYYY-MM-DD" />
+                                </div>
+                                <label class="col-sm-2 control-label text-sm-right mt-2">등록IP</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" id="" placeholder="000.000.000.000" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 control-label text-sm-right mt-2">파일첨부</label>
+                                <div class="col-sm-10">
+                                    <form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-4 text-center">
+                                    <button type="button" class="btn mt-2 mr-1 btn-primary btn-py-2 px-4"
+                                        data-dismiss="modal">적용</button>
+                                    <button type="reset"
+                                        class="btn mt-2 btn-outline-secondary btn-py-2 px-4 modal-dismiss"
+                                        data-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 결성기간 끝 -->
+        <!-- start: MAIN JAVASCRIPTS -->
+        <!--[if lt IE 9]>
+		<script src="assets/plugins/respond.min.js"></script>
+		<script src="assets/plugins/excanvas.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/jQuery/jquery-1.11.1.min.js"></script>
+		<![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script src="assets/plugins/jQuery/jquery.js"></script>
+        <!--<![endif]-->
+        <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/blockUI/jquery.blockUI.js"></script>
+        <script src="assets/plugins/iCheck/jquery.icheck.min.js"></script>
+        <script src="assets/plugins/moment/min/moment.min.js"></script>
+        <script src="assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+        <script src="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+        <script src="assets/plugins/bootbox/bootbox.min.js"></script>
+        <script src="assets/plugins/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script src="assets/plugins/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+        <script src="assets/plugins/jquery.appear/jquery.appear.js"></script>
+        <script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+        <script src="assets/plugins/velocity/jquery.velocity.min.js"></script>
+        <script src="assets/plugins/TouchSwipe/jquery.touchSwipe.min.js"></script>
+        <!-- end: MAIN JAVASCRIPTS -->
+        <!-- start: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+        <script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+        <script src="assets/plugins/jquery-mockjax/jquery.mockjax.js"></script>
+        <script src="assets/plugins/toastr/toastr.js"></script>
+        <script src="assets/plugins/bootstrap-modal/js/bootstrap-modal.js"></script>
+        <script src="assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+        <script src="assets/plugins/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+        <script src="assets/plugins/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+        <script src="assets/plugins/bootstrap-select/bootstrap-select.js"></script>
+        <script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+        <script src="assets/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/truncate/jquery.truncate.js"></script>
+        <script src="assets/plugins/summernote/dist/summernote.min.js"></script>
+        <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- date/time/clock-pikcer  -->
+        <script src="assets/plugins/pickers/flatpickr/flatpickr.js"></script>
+        <script src="assets/plugins/pickers/flatpickr/monthPlugin.js"></script>
+        <script src="assets/plugins/pickers/flatpickr/ko.js"></script>
+        <script>
+            //모달 드래그 가능
+            $('.modal-dialog').draggable({
+                "handle": ".card-header"
+                , containment: [-920, 0, 920, 3000]
+                // 	[ x1, y1, x2, y2 ].
+                //         , containment: ".modal-open"//"document"//$('#MOVESTEP_POP')//  '.content-body'
+                //         , scroll:true
+                //         , opacity: 0.7 //드레그시 투명값
+            });
+
+            //레이어 팝업에 스크롤 잡는 기능 
+            $(document).ready(function () {
+                $(document).on({
+                    'show.bs.modal': function () {
+                        var zIndex = 10400 + (10 * $('.modal:visible').length);
+                        $(this).css('z-index', zIndex);
+                        setTimeout(function () {
+                            $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+                        }, 0);
+                    }
+                    , 'hidden.bs.modal': function () {
+                        if ($('.modal:visible').length > 0) {
+                            // restore the modal-open class to the body element, so that scrolling works
+                            // properly after de-stacking a modal.
+                            setTimeout(function () {
+                                $(document.body).addClass('modal-open');
+                            }, 0);
+                        }
+                    }
+                }, '.modal');
+
+                let formatNumber = $('[data-gbn="number"]');
+                $.each(formatNumber, function (idx, item) {
+                    $("[data-id='" + $(item).attr('data-id') + "']").keyup(function (event) {
+                        event.target.value = StringUtil.addComma(event.target.value);
+                    });
+                })
+
+                let formatDecimal = $('[data-gbn="decimal"]');
+                $.each(formatDecimal, function (idx, item) {
+                    // 				이방법이 최선인지는 모르겠음
+                    $("[data-id='" + $(item).attr('data-id') + "']").keyup(function (event) {
+                        let temp = StringUtil.addCommaDecimal(event.target.value);
+                        event.target.value = temp;
+                    });
+                    // 아래 방법들은 다 작동을 안함.ㅋ
+                    // 				eval(item).on('onkeyup',function(event){
+                    // 					console.log(StringUtil.addComma(event.target.value));
+                    // 					event.target.value = StringUtil.addComma(event.target.value);
+                    // 				});
+                    // 				$(item).on('onkeyup',function(event){
+                    // 					console.log(StringUtil.addComma(event.target.value));
+                    // 					event.target.value = StringUtil.addComma(event.target.value);
+                    // 				});
+                    // 				$(item).addEventListener('onkeyup',function(event){
+                    // 					console.log(StringUtil.addComma(event.target.value));
+                    // 					event.target.value = StringUtil.addComma(event.target.value);
+                    // 				});
+                })
+
+                //연락처입력 format
+                $(".phonFormatEvt").on("blur", function () {
+                    let number = $(this).val();
+                    $(this).val(StringUtil.phoneFomatter(number));
+                });
+
+                // 			'use strict';
+                // 			Spinner();
+                // 			Spinner.show();
+            });//ready
+            const yearOpt = {
+                plugins: [
+                    new monthSelectPlugin({
+                        shorthand: true, //defaults to false
+                        dateFormat: "Y",
+                        altFormat: "Y",
+                        theme: "light", // defaults to "light"		              
+                    })
+                ]
+                , "allowInput": true
+                , locale: "ko"
+            };
+            const monthOpt = {
+                plugins: [
+                    new monthSelectPlugin({
+                        shorthand: true, //defaults to false
+                        dateFormat: "Y-m", //defaults to "F Y"
+                        altFormat: "Y F ", //defaults to "F Y"
+                        theme: "light", // defaults to "light"		              
+                    })
+                ]
+                , "allowInput": true
+                , locale: "ko"
+            };
+            //기본 달력...많이 보는 달력 셋팅 
+            const basicOpt = {
+                "dateFormat": "Y-m-d",
+                locale: "ko",
+                "allowInput": true,
+                "enableTime": false,
+                "onValueUpdate": function (selectedDates, dateStr, instance) {
+                    if (instance.element.id.includes("MAIN_SEARCH")) {
+                        let isNopicker = $(instance.element).hasClass('nopickerTag');
+                        if (isNopicker) { $(instance.element).blur(); return false; }
+                        fnKIJUNDTBasic(dateStr, instance.element.id);
+                    }//if
+                    $(instance.element).blur();
+                    instance.close();
+                }
+            };
+
+            const dateTimeOpt = {
+                "dateFormat": "Y-m-d",
+                "enableTime": true,
+                "allowInput": true
+            };
+
+            (function (window, document, $) {
+                'use strict';
+
+                /*******  Flatpickr  *****/
+                var basicPickr = $('.flatpickr-basic'),
+                    monthPickr = $('.flatpickr-month'),
+                    dateTimePickr = $('.flatpickr-date-time'),
+                    yearPickr = $('.flatpickr-year')
+
+                if (basicPickr.length) {
+                    basicPickr.flatpickr(basicOpt);
+                }
+                if (monthPickr.length) {
+                    monthPickr.flatpickr(monthOpt);
+                }
+                if (yearPickr.length) {
+                    yearPickr.flatpickr(yearOpt);
+                }
+                // Date & TIme
+                if (dateTimePickr.length) {
+                    dateTimePickr.flatpickr(dateTimeOpt);
+                }
+
+                basicPickr.on('blur', function (e) {
+                    let tid = $(e.target).attr('id');
+                    let isNopicker = $(e.target).hasClass('nopickerTag');
+
+                    let val = $(this).val().replaceAll(/[^0-9]/g, '');
+                    if (val.length == 8) {
+                        val = StringUtil.toDate(val, '-');
+                    } else {
+                        val = '';
+                    }
+                    $(this).val(val);
+
+                    if (isNopicker) { return false; }
+                    if (StringUtil.isNull(tid)) { return false; }
+                    if (tid.includes("MAIN_SEARCH")) {
+                        if (StringUtil.isNull(val)) { return false; }
+                        fnKIJUNDTBasic(val, tid);
+                    }//if
+                });
+
+                basicPickr.on('keydown', function (e) {
+                    if (e.keyCode == '13') {
+                        let val = $(this).val().replaceAll(/[^0-9]/g, '');
+                        if (val.length == 8) {
+                            val = StringUtil.toDate(val, '-');
+                        } else {
+                            val = '';
+                        }
+                        $(this).val(val);
+                    }
+                });
+            })(window, document, jQuery);
+
+            function refreshFlatpicker(parentId) {
+                if (parentId === undefined) parentId = '';
+                $(parentId + ' .flatpickr-basic').flatpickr(basicOpt);
+                $(parentId + ' .flatpickr-month').flatpickr(monthOpt);
+                $(parentId + ' .flatpickr-year').flatpickr(yearOpt);
+                $(parentId + ' .flatpickr-date-time').flatpickr(dateTimeOpt);
+            }
+            //feather 아이콘 불러오는 함수 지우지마세요 
+            feather.replace();
+
+        </script>
+        <!--<script src="assets/js/subview.js"></script>
+		<script src="assets/js/subview-examples.js"></script>-->
+        <!-- end: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+        <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+        <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+        <!-- start: CORE JAVASCRIPTS  -->
+        <script src="assets/js/main.js"></script>
+        <!-- end: CORE JAVASCRIPTS  -->
+        <script>
+            jQuery(document).ready(function () {
+                Main.init();
+            });
+            //조직도 검색 창 호출
+            function callREGITPOP() {
+                $('#registPOP').modal('show');
+            }
+        </script>
+</body>
+<!-- end: BODY -->
+
+</html>
